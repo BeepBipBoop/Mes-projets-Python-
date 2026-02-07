@@ -1,0 +1,1 @@
+print("hello world") # Ma première ligne python (3 decembre 2025 )

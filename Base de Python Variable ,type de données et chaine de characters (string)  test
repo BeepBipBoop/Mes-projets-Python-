@@ -1,0 +1,70 @@
+#Bonjour ! Ici je vais expliquer et démontrer  comment une variable marche , comment une chaine de characters marche et quelle autre possibilité on peut faire.exec
+ 
+
+#Une variable en Python est un nom (identifiant) qui référence un objet stocké en mémoire, créé automatiquement lors de l'assignation d'une valeur avec nom_variable = valeur
+
+string_1 = "Bonjour"
+string_2 = "Le monde !"
+
+Testmonde = string_1 + string_2
+
+print(Testmonde) # Bonjour le monde (J'utilise une variable pour deux) # ca marche qu'avec des string seulement. Si j'utilise d'autre type de données alors il y aura une erreur puisque python ne fait pas le tri automatique des données . 
+
+#Il est important de noté que en python il y a plusieurs type de données. En effet les plus populaire sont les string , les integer et float.
+#Les string correspond a des chaines de characters . 
+# les integrer a des nombre Entier non décimal. 
+# Les float a des nombres décimal.
+
+
+
+#exemple 
+
+string_3 = "J'ai"
+Age = "19" # Integrer
+
+#si on fait print (string_3+Age) alors il y aura une erreur car l'age n'est pas en STR.
+print(string_3+Age)
+
+# Solution pour combiner une variable contenant du character et des nombre il suffit de rendre le type de donnée nombre en chaine de character avec la fonction "str()".
+
+
+#Exemple
+
+Presentation_Age = string_3 + str(Age)
+
+print(Presentation_Age)
+
+
+# Autre sollution pour combiner plusieurs type de données consiste a utilisé des F string .Elles permettent d'insérer directement des variables, expressions ou résultats de fonctions à l'intérieur d'une chaîne en utilisant un préfixe f ou F et des accolades {}.
+
+presentation = "J'ai"
+Chiffre = "999" # exemple 
+
+presentation_Chiffre = f"{presentation}+{Chiffre}" #F string ici 
+
+print (presentation_Chiffre)
+
+#L'indexation permet de prendre qu'une partie d'un chaine de characters.  Sa synthaxe est [start:stop] et  elle est exclusif < > (inclussion) 
+
+Exempleindexation = "Rouen est une belle ville" # exemple de phrase 
+
+print(Exempleindexation [1:6]) #Ne va ecrire que Ouen ( la premiere Lettre et exclu)
+
+
+# Il est possible aussi de faire de l'indexation négatif.
+#L'indexation négatif part à partir du derniers mot.
+
+Exempleindexneg = "La nuit est sombre"
+
+print(Exempleindexneg[-7:]) #il va ecrire sombre.
+
+#dans l'indexation
+# s  o  m  b  r  e
+#-7 -6 -5 -4 -3 -2 -1
+
+
+# Ressource :
+#Introduction to Python
+# How Do You Declare Variables and What Are Naming Conventions to Name Variables?
+# What Are Common Data Types in Python and How Do You Get the Type of a Variable?
+# "" How Do You Work With Strings? "" freecode.camp
