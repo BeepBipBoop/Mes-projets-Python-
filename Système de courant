@@ -1,0 +1,23 @@
+Courant = 0.00
+Courant = (float(input("Capacité de la batterie")))
+
+
+
+#Formule du courant P= U x V
+
+#Formule puissance dans le temps p= E / t
+
+print(Courant)
+
+
+if  Courant >= 1 : 
+ print("Le courant passe")
+else: 
+   print("Le courant ne passe pas")
+
+
+print(type(Courant))
+
+
+
+
